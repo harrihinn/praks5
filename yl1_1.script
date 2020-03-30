@@ -1,0 +1,10 @@
+#!/bin/bash
+#küsib külgede pikkuse ja arvutab hüpotenuusi väärtuse
+a=0.0
+echo -n "Sisesta a külje väärtus: "
+read a
+b=0.0
+echo -n "Sisesta b külje väärtus: "
+read b
+c=`echo "scale=2;sqrt($a^2+$b^2)" | bc`
+echo "$c"
