@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# väljastab pinda heroni valemi järgi kolme külje kaudu
 a=0.0
 echo -n "Sisesta a külje väärtus: "
 read a
@@ -10,8 +10,7 @@ c=0.0
 echo -n "Sisesta c külje väärtus: "
 read c
 p=`echo "($a+$b+$c)/2" | bc`
-test=`echo "$p*($p-$a)*($p-$b)*($p-$c)"|bc`
 
 S=`echo "scale=2; sqrt($p*($p-$a)*($p-$b)*($p-$c))"|bc`
 #v=$(echo "scale2; $S" | bc)
-echo "Pindala = $S $test"
+echo "Pindala = $S "

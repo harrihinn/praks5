@@ -1,0 +1,4 @@
+#!/bin/bash
+#aegajalt muuta
+git remote add origin https://github.com/harrihinn/praks5.git
+git push -u origin master
