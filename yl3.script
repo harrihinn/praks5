@@ -1,0 +1,11 @@
+#!/bin/bash
+paev =0
+echo -n "Sisesta millal sõidad ära (päeva nr): "
+read paev
+aeg=0
+echo -n "Sisesta reisi ööpäevade arv: "
+read aeg
+tagasi=0
+tagasi=$((($paev+$aeg)%7))
+echo "Tagasi oled päeval nr $tagasi"
+
